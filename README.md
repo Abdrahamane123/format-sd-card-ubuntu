@@ -42,13 +42,13 @@ Formatez la nouvelle partition :
 
 2. Méthode avec gparted (interface graphique)
 
-    Installez gparted si ce n'est pas déjà fait :
+Installez gparted si ce n'est pas déjà fait :
 
-sudo apt install gparted
+	sudo apt install gparted
 
 Lancez gparted :
 
-sudo gparted
+	sudo gparted
 
 Dans l'interface :
 
