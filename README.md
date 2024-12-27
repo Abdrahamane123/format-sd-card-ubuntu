@@ -2,7 +2,7 @@
 Insérez la carte SD dans votre PC Ubuntu.
 Ouvrez un terminal et tapez :
 
-lsblk
+	lsblk
 
 Identifiez le nom de votre carte SD (par exemple, /dev/sdb). Ne vous fiez pas aux partitions comme /dev/sdb1 ou /dev/sdb2.
 Votre carte SD est listée comme mmcblk0, avec des partitions comme par exemple dans mon cas :
@@ -13,14 +13,14 @@ Votre carte SD est listée comme mmcblk0, avec des partitions comme par exemple 
 Si vous voulez supprimer ces partitions et créer une seule partition, voici comment procéder :
 1. Méthode avec fdisk
 
-    Démontez les partitions actuelles :
+Démontez les partitions actuelles :
 
-sudo umount /dev/mmcblk0p1
-sudo umount /dev/mmcblk0p2
+	sudo umount /dev/mmcblk0p1
+	sudo umount /dev/mmcblk0p2
 
 Lancez fdisk pour la carte SD :
 
-sudo fdisk /dev/mmcblk0
+	sudo fdisk /dev/mmcblk0
 
 Supprimez toutes les partitions :
 
